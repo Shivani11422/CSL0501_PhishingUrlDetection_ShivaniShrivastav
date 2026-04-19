@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🔐 Phishing Website Detection</h2>
+
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter Website URL" required>
+        <button type="submit">Check</button>
+    </form>
+{% if result %}
+<div class="result
+{% if 'Phishing' in result %}
+    phishing
+{% elif 'Invalid' in result %}
+    invalid
+{% else %}
+    safe
+{% endif %}
+">
+    {{ result }}
+</div>
+{% endif %}
+<div class="footer">
+    🔒 AI Powered Security System
+</div>
+
+</div>
+
+</body>
+</html>
