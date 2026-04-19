@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+                url("/static/g.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+/* Glass effect container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    width: 420px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    color: white;
+}
+
+/* Heading */
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+/* Input */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Result */
+.result {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease;
+}
+
+.safe {
+    background: rgba(0,255,150,0.2);
+}
+
+.phishing {
+    background: rgba(255,0,0,0.3);
+}
+
+.invalid {
+    background: rgba(255,200,0,0.3);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ddd;
+}
+/* 🔄 Back Button UX */
+.back-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
